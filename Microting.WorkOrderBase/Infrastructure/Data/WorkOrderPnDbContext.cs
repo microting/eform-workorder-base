@@ -40,6 +40,8 @@ namespace Microting.WorkOrderBase.Infrastructure.Data
 
         public DbSet<WorkOrder> WorkOrders { get; set; }
         public DbSet<WorkOrderVersion> WorkOrderVersions { get; set; }
+        public DbSet<AssignedSite> AssignedSites { get; set; }
+        public DbSet<AssignedSiteVersion> AssignedSiteVersions { get; set; }
 
         public DbSet<PluginConfigurationValue> PluginConfigurationValues { get; set; }
         public DbSet<PluginConfigurationValueVersion> PluginConfigurationValueVersions { get; set; }
@@ -50,6 +52,8 @@ namespace Microting.WorkOrderBase.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<AssignedSite>().HasIndex(x => x.SiteId);
+            modelBuilder.Entity<AssignedSiteVersion>().HasIndex(x => x.SiteId);
         }
     }
 }

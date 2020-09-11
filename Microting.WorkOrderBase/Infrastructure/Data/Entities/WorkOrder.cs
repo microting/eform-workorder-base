@@ -1,4 +1,4 @@
-﻿using Microting.WorkOrderBase.Infrastructure.Data.Base;
+using Microting.WorkOrderBase.Infrastructure.Data.Base;
 using System;
 using System.Collections.Generic;
 using System.Text;
