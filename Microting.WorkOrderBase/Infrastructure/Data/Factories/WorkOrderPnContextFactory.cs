@@ -34,7 +34,7 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Factories
         public WorkOrderPnDbContext CreateDbContext(string[] args)
         {
             // "Data Source=.\\SQLEXPRESS;Database=work-order-pn;Integrated Security=True"
-            args = new[] { "Server = localhost; port = 3306; Database = work-orders-base-db; user = root; Convert Zero Datetime = true;" };
+            //args = new[] { "Server = localhost; port = 3306; Database = work-orders-base-db; user = root; Convert Zero Datetime = true;" };
             var optionsBuilder = new DbContextOptionsBuilder<WorkOrderPnDbContext>();
             if (args.Any())
             {
