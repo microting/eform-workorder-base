@@ -34,7 +34,7 @@ namespace Microting.WorkOrderBase.Tests
     using NUnit.Framework;
 
     [TestFixture]
-    public class InstallationUTest : DbTestFixture
+    public class WorkOrdersUTest : DbTestFixture
     {
         [Test]
         public async Task WorkOrder_Create_DoesCreate()
