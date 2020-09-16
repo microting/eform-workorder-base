@@ -87,6 +87,86 @@ namespace Microting.WorkOrderBase.Migrations
                     b.ToTable("AssignedSiteVersions");
                 });
 
+            modelBuilder.Entity("Microting.WorkOrderBase.Infrastructure.Data.Entities.PicturesOfTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FileName")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WorkOrderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
+                        .HasMaxLength(255);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FileName");
+
+                    b.HasIndex("WorkOrderId");
+
+                    b.ToTable("PicturesOfTasks");
+                });
+
+            modelBuilder.Entity("Microting.WorkOrderBase.Infrastructure.Data.Entities.PicturesOfTaskDone", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FileName")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WorkOrderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
+                        .HasMaxLength(255);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FileName");
+
+                    b.HasIndex("WorkOrderId");
+
+                    b.ToTable("PicturesOfTaskDone");
+                });
+
             modelBuilder.Entity("Microting.WorkOrderBase.Infrastructure.Data.Entities.WorkOrder", b =>
                 {
                     b.Property<int>("Id")
@@ -189,13 +269,19 @@ namespace Microting.WorkOrderBase.Migrations
                     b.Property<int>("CaseId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CaseUId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CheckId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CheckUId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
                     b.Property<int>("CreatedByUserId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MicrotingId")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -215,6 +301,8 @@ namespace Microting.WorkOrderBase.Migrations
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("WorkOrderId");
 
                     b.ToTable("WorkOrdersTemplateCases");
                 });
@@ -408,6 +496,33 @@ namespace Microting.WorkOrderBase.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PluginPermissions");
+                });
+
+            modelBuilder.Entity("Microting.WorkOrderBase.Infrastructure.Data.Entities.PicturesOfTask", b =>
+                {
+                    b.HasOne("Microting.WorkOrderBase.Infrastructure.Data.Entities.WorkOrder", "WorkOrder")
+                        .WithMany("PicturesOfTasks")
+                        .HasForeignKey("WorkOrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microting.WorkOrderBase.Infrastructure.Data.Entities.PicturesOfTaskDone", b =>
+                {
+                    b.HasOne("Microting.WorkOrderBase.Infrastructure.Data.Entities.WorkOrder", "WorkOrder")
+                        .WithMany("PicturesOfTaskDone")
+                        .HasForeignKey("WorkOrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microting.WorkOrderBase.Infrastructure.Data.Entities.WorkOrdersTemplateCases", b =>
+                {
+                    b.HasOne("Microting.WorkOrderBase.Infrastructure.Data.Entities.WorkOrder", "WorkOrder")
+                        .WithMany()
+                        .HasForeignKey("WorkOrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginGroupPermission", b =>

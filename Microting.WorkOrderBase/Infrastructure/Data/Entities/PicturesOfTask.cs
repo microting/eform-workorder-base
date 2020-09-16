@@ -23,10 +23,12 @@ SOFTWARE.
 */
 namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
 {
-    using Microting.eFormApi.BasePn.Infrastructure.Database.Base;
+    using Base;
 
-    public class AssignedSiteVersion : BaseEntity
+    public class PicturesOfTask : PnBase
     {
-        public int SiteId { get; set; }
+        public string FileName { get; set; }
+        public int WorkOrderId { get; set; }
+        public virtual WorkOrder WorkOrder { get; set; }
     }
 }
