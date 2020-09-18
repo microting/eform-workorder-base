@@ -1,4 +1,4 @@
-/*
+﻿/*
 The MIT License (MIT)
 
 Copyright (c) 2007 - 2020 Microting A/S
@@ -21,22 +21,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-
 namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
 {
-    using System.Collections.Generic;
-    using Base;
-    using System;
+    using Microting.eFormApi.BasePn.Infrastructure.Database.Base;
 
-    public class WorkOrder : PnBase
+    public class AssignedSiteVersion : BaseEntity
     {
-        public string Description { get; set; }
-        public DateTime CorrectedAtLatest { get; set; }
-        public DateTime DoneAt { get; set; }
-        public int DoneBySiteId { get; set; }
-        public string DescriptionOfTaskDone { get; set; }
-
-        public virtual List<PicturesOfTask> PicturesOfTasks { get; set; } = new List<PicturesOfTask>();
-        public virtual List<PicturesOfTaskDone> PicturesOfTaskDone { get; set; } = new List<PicturesOfTaskDone>();
+        public int SiteId { get; set; }
     }
 }
