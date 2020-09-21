@@ -32,7 +32,7 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
     {
         public string Description { get; set; }
         public DateTime CorrectedAtLatest { get; set; }
-        public DateTime DoneAt { get; set; }
+        public DateTime? DoneAt { get; set; }
         public int DoneBySiteId { get; set; }
         public string DescriptionOfTaskDone { get; set; }
 

@@ -33,28 +33,12 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Factories
     {
         public WorkOrderPnDbContext CreateDbContext(string[] args)
         {
-            // "Data Source=.\\SQLEXPRESS;Database=work-order-pn;Integrated Security=True"
-            //args = new[] { "Server = localhost; port = 3306; Database = work-orders-base-db; user = root; Convert Zero Datetime = true;" };
+            var defaultCs = "Server = localhost; port = 3306; Database = work-orders-base-db; user = root; Convert Zero Datetime = true;";
             var optionsBuilder = new DbContextOptionsBuilder<WorkOrderPnDbContext>();
-            if (args.Any())
-            {
-                if (args.FirstOrDefault().ToLower().Contains("convert zero datetime"))
-                {
-                    optionsBuilder.UseMySql(args.FirstOrDefault());
-                }
-                else
-                {
-                    optionsBuilder.UseSqlServer(args.FirstOrDefault());
-                }
-            }
-            else
-            {
-                throw new ArgumentNullException("Connection string not present");
-            }
-            //optionsBuilder.UseSqlServer(@"data source=(LocalDb)\SharedInstance;Initial catalog=work-order-base-tests;Integrated Security=True");
-            // dotnet ef migrations add InitialCreate--project Microting.WorkOrderBase--startup - project DBMigrator
-            optionsBuilder.UseLazyLoadingProxies(true);
+            optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs);
+
             return new WorkOrderPnDbContext(optionsBuilder.Options);
+            // dotnet ef migrations add InitialCreate --project Microting.WorkOrderBase --startup-project DBMigrator
         }
     }
 }
