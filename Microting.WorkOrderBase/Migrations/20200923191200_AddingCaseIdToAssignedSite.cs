@@ -9,13 +9,13 @@ namespace Microting.WorkOrderBase.Migrations
             migrationBuilder.AddColumn<int>(
                 name: "CaseId",
                 table: "AssignedSiteVersions",
-                nullable: false,
+                nullable: true,
                 defaultValue: 0);
 
             migrationBuilder.AddColumn<int>(
                 name: "CaseId",
                 table: "AssignedSites",
-                nullable: false,
+                nullable: true,
                 defaultValue: 0);
         }
 

@@ -63,7 +63,7 @@ namespace Microting.WorkOrderBase.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("CaseId")
+                    b.Property<int?>("CaseId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
@@ -274,7 +274,7 @@ namespace Microting.WorkOrderBase.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("CaseId")
+                    b.Property<int?>("CaseId")
                         .HasColumnType("int");
 
                     b.Property<int>("CaseUId")

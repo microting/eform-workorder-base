@@ -28,6 +28,6 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
     public class AssignedSiteVersion : BaseEntity
     {
         public int SiteId { get; set; }
-        public int CaseId { get; set; }
+        public int? CaseId { get; set; }
     }
 }
