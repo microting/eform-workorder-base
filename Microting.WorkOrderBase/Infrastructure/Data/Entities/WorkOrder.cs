@@ -35,6 +35,9 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
         public DateTime? DoneAt { get; set; }
         public int DoneBySiteId { get; set; }
         public string DescriptionOfTaskDone { get; set; }
+        public int MicrotingId { get; set; }
+        public int CheckId { get; set; }
+        public int CheckUId { get; set; }
 
         public virtual List<PicturesOfTask> PicturesOfTasks { get; set; } = new List<PicturesOfTask>();
         public virtual List<PicturesOfTaskDone> PicturesOfTaskDone { get; set; } = new List<PicturesOfTaskDone>();

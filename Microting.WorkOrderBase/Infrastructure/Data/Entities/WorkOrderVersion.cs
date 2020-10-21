@@ -35,6 +35,9 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
         public DateTime? DoneAt { get; set; }
         public int DoneBySiteId { get; set; }
         public string DescriptionOfTaskDone { get; set; }
+        public int MicrotingId { get; protected set; }
+        public int CheckId { get; protected set; }
+        public int CheckUId { get; protected set; }
 
         [ForeignKey("WorkOrder")]
         public int WorkOrderId { get; set; }
