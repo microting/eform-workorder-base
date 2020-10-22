@@ -42,7 +42,8 @@ namespace Microting.WorkOrderBase.Infrastructure.Data
         public DbSet<WorkOrderVersion> WorkOrderVersions { get; set; }
         public DbSet<AssignedSite> AssignedSites { get; set; }
         public DbSet<AssignedSiteVersion> AssignedSiteVersions { get; set; }
-        public DbSet<WorkOrdersTemplateCases> WorkOrdersTemplateCases { get; set; }
+        public DbSet<WorkOrdersTemplateCase> WorkOrdersTemplateCases { get; set; }
+        public DbSet<WorkOrdersTemplateCaseVersion> WorkOrdersTemplateCaseVersions { get; set; }
         public DbSet<PicturesOfTask> PicturesOfTasks { get; set; }
         public DbSet<PicturesOfTaskDone> PicturesOfTaskDone { get; set; }
         public DbSet<PluginConfigurationValue> PluginConfigurationValues { get; set; }

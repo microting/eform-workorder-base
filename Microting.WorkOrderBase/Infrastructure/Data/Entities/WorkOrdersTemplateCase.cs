@@ -25,14 +25,14 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
 {
     using Base;
 
-    public class WorkOrdersTemplateCases : PnBase
+    public class WorkOrdersTemplateCase : PnBase
     {
         public int CaseId { get; set; }
         public int CaseUId { get; set; }
         public int CheckId { get; set; }
         public int CheckUId { get; set; }
-
         public int WorkOrderId { get; set; }
+        public int SdkSiteId { get; set; }
         public virtual WorkOrder WorkOrder { get; set; }
     }
 }
