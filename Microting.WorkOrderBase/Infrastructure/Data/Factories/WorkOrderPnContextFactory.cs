@@ -33,7 +33,7 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Factories
     {
         public WorkOrderPnDbContext CreateDbContext(string[] args)
         {
-            var defaultCs = "Server = localhost; port = 3306; Database = work-orders-base-db; user = root; Convert Zero Datetime = true;";
+            var defaultCs = "Server = localhost; port = 3306; Database = work-orders-base-db; user = root; password = secretpassword; Convert Zero Datetime = true;";
             var optionsBuilder = new DbContextOptionsBuilder<WorkOrderPnDbContext>();
             optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs);
 

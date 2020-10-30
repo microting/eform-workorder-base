@@ -59,7 +59,7 @@ namespace Microting.WorkOrderBase.Tests
             else
             {
                 _connectionString =
-                    @"Server = localhost; port = 3306; Database = work-order-base-tests; user = root; Convert Zero Datetime = true;";
+                    @"Server = localhost; port = 3306; Database = work-order-base-tests; user = root; password = secretpassword; Convert Zero Datetime = true;";
             }
 
             GetContext(_connectionString);
