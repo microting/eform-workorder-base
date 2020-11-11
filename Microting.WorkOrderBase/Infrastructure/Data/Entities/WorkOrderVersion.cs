@@ -37,6 +37,8 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
         public int MicrotingId { get; protected set; }
         public int CheckId { get; protected set; }
         public int CheckUId { get; protected set; }
+        public string AssignedArea { get; set; }
+        public string AssignedWorker { get; set; }
 
         [ForeignKey("WorkOrder")]
         public int WorkOrderId { get; set; }

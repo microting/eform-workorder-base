@@ -38,6 +38,8 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
         public int MicrotingId { get; set; }
         public int CheckId { get; set; }
         public int CheckUId { get; set; }
+        public string AssignedArea { get; set; }
+        public string AssignedWorker { get; set; }
 
         public virtual List<PicturesOfTask> PicturesOfTasks { get; set; } = new List<PicturesOfTask>();
         public virtual List<PicturesOfTaskDone> PicturesOfTaskDone { get; set; } = new List<PicturesOfTaskDone>();
