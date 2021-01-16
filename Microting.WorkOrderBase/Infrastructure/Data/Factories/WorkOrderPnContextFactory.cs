@@ -22,6 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+
 namespace Microting.WorkOrderBase.Infrastructure.Data.Factories
 {
     using System;
@@ -35,7 +37,11 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Factories
         {
             var defaultCs = "Server = localhost; port = 3306; Database = work-orders-base-db; user = root; password = secretpassword; Convert Zero Datetime = true;";
             var optionsBuilder = new DbContextOptionsBuilder<WorkOrderPnDbContext>();
-            optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs);
+            optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs, mysqlOptions =>
+            {
+                mysqlOptions.ServerVersion(new Version(10, 4, 0), ServerType.MariaDb).EnableRetryOnFailure();
+            });
+            //optionsBuilder.UseLazyLoadingProxies(true);
 
             return new WorkOrderPnDbContext(optionsBuilder.Options);
             // dotnet ef migrations add InitialCreate --project Microting.WorkOrderBase --startup-project DBMigrator
