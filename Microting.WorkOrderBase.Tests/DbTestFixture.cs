@@ -52,15 +52,8 @@ namespace Microting.WorkOrderBase.Tests
         [SetUp]
         public void Setup()
         {
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
-                _connectionString = @"data source=(LocalDb)\SharedInstance;Initial catalog=work-order-base-tests;Integrated Security=true";
-            }
-            else
-            {
-                _connectionString =
-                    @"Server = localhost; port = 3306; Database = work-order-base-tests; user = root; password = secretpassword; Convert Zero Datetime = true;";
-            }
+            _connectionString =
+            @"Server = localhost; port = 3306; Database = work-order-base-tests; user = root; password = secretpassword; Convert Zero Datetime = true;";
 
             GetContext(_connectionString);
 
@@ -91,41 +84,51 @@ namespace Microting.WorkOrderBase.Tests
 
         private void ClearDb()
         {
-            List<string> modelNames = new List<string>();
-            modelNames.Add("WorkOrders");
-            modelNames.Add("WorkOrderVersions");
+            List<string> modelNames = new List<string>
+            {
+                "WorkOrders",
+                "WorkOrderVersions",
+                "AssignedSites",
+                "AssignedSiteVersions",
+                "PictureOfTasks",
+                "PictureOfTaskVersions",
+                "WorkOrdersTemplateCases",
+                "WorkOrdersTemplateCaseVersions"
+            };
+            bool firstRunNotDone = true;
 
             foreach (var modelName in modelNames)
             {
                 try
                 {
-                    string sqlCmd;
-                    if (DbContext.Database.IsMySql())
+                    if (firstRunNotDone)
                     {
-                        sqlCmd = $"SET FOREIGN_KEY_CHECKS = 0;TRUNCATE `{modelName}`";
+                        DbContext.Database.ExecuteSqlRaw(
+                            $"SET FOREIGN_KEY_CHECKS = 0;TRUNCATE `{modelName}`");
                     }
-                    else
-                    {
-                        sqlCmd = $"DELETE FROM [{modelName}]";
-                    }
-
-                    DbContext.Database.ExecuteSqlCommand(sqlCmd);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    if (ex.Message == "Unknown database 'eformsdk-tests'")
+                    {
+                        firstRunNotDone = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                 }
             }
         }
 
-        private string path;
+        private string _path;
 
         private void ClearFile()
         {
-            path = System.Reflection.Assembly.GetExecutingAssembly().CodeBase;
-            path = Path.GetDirectoryName(path).Replace(@"file:\", "");
+            _path = System.Reflection.Assembly.GetExecutingAssembly().CodeBase;
+            _path = Path.GetDirectoryName(_path)?.Replace(@"file:\", "");
 
-            string picturePath = path + @"\output\dataFolder\picture\Deleted";
+            string picturePath = _path + @"\output\dataFolder\picture\Deleted";
 
             DirectoryInfo diPic = new DirectoryInfo(picturePath);
 
@@ -135,7 +138,11 @@ namespace Microting.WorkOrderBase.Tests
                 {
                     file.Delete();
                 }
-            } catch { }
+            }
+            catch
+            {
+                // ignored
+            }
         }
 
         protected virtual void DoSetup() { }

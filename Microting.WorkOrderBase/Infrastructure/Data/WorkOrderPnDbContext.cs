@@ -55,8 +55,8 @@ namespace Microting.WorkOrderBase.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<AssignedSite>().HasIndex(x => x.SiteId);
-            modelBuilder.Entity<AssignedSiteVersion>().HasIndex(x => x.SiteId);
+            modelBuilder.Entity<AssignedSite>().HasIndex(x => x.SiteMicrotingUid);
+            modelBuilder.Entity<AssignedSiteVersion>().HasIndex(x => x.SiteMicrotingUid);
             modelBuilder.Entity<PicturesOfTask>().HasIndex(x => x.FileName);
             modelBuilder.Entity<PicturesOfTaskDone>().HasIndex(x => x.FileName);
         }

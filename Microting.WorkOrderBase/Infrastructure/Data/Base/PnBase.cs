@@ -22,6 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+using System.Linq;
+using System.Text.RegularExpressions;
+
 namespace Microting.WorkOrderBase.Infrastructure.Data.Base
 {
     using System;
@@ -39,25 +42,25 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Base
             Version = 1;
             WorkflowState = Constants.WorkflowStates.Created;
 
-            await dbContext.AddAsync(this);
-            await dbContext.SaveChangesAsync();
+            await dbContext.AddAsync(this).ConfigureAwait(false);
+            await dbContext.SaveChangesAsync().ConfigureAwait(false);
 
             var res = MapVersion(this);
             if (res != null)
             {
-                await dbContext.AddAsync(res);
-                await dbContext.SaveChangesAsync();
+                await dbContext.AddAsync(res).ConfigureAwait(false);
+                await dbContext.SaveChangesAsync().ConfigureAwait(false);
             }
         }
 
         public async Task Update(WorkOrderPnDbContext dbContext)
         {
-            await UpdateInternal(dbContext);
+            await UpdateInternal(dbContext).ConfigureAwait(false);
         }
 
         public async Task Delete(WorkOrderPnDbContext dbContext)
         {
-            await UpdateInternal(dbContext, Constants.WorkflowStates.Removed);
+            await UpdateInternal(dbContext, Constants.WorkflowStates.Removed).ConfigureAwait(false);
         }
 
         private async Task UpdateInternal(WorkOrderPnDbContext dbContext, string state = null)
@@ -77,8 +80,8 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Base
                 var res = MapVersion(this);
                 if (res != null)
                 {
-                    await dbContext.AddAsync(res);
-                    await dbContext.SaveChangesAsync();
+                    await dbContext.AddAsync(res).ConfigureAwait(false);
+                    await dbContext.SaveChangesAsync().ConfigureAwait(false);
                 }
             }
         }
@@ -109,9 +112,7 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Base
                             PropertyInfo targetProp = targetType.GetProperty(propName);
 
                             targetProp.SetValue(returnObj, propValue, null);
-                        }
-                        else
-                        {
+                        } else {
                             var propValue = prop.GetValue(obj);
                             Type targetType = returnObj.GetType();
                             PropertyInfo targetProp = targetType.GetProperty($"{className}Id");
