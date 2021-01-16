@@ -37,7 +37,7 @@ namespace Microting.WorkOrderBase.Infrastructure.Data.Entities
         public string DescriptionOfTaskDone { get; set; }
         public int MicrotingId { get; set; }
         public int CheckId { get; set; }
-        public int CheckUId { get; set; }
+        public int CheckMicrotingUid { get; set; }
         public string AssignedArea { get; set; }
         public string AssignedWorker { get; set; }
 
