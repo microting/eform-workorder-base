@@ -1,5 +1,8 @@
 # eform-workorder-base
-![.NET Core](https://github.com/microting/eform-workorder-base/workflows/.NET%20Core/badge.svg)
+[![.NET Version release](https://github.com/microting/eform-workorder-base/actions/workflows/dotnet-core.yml/badge.svg)](https://github.com/microting/eform-workorder-base/actions/workflows/dotnet-core.yml)
+[![NuGet Badge](https://buildstats.info/nuget/Microting.WorkOrderBase)](https://www.nuget.org/packages/Microting.WorkOrderBase/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2872d19bd123c1616f54/maintainability)](https://codeclimate.com/github/microting/eform-workorder-base/maintainability)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cce796e812b84ae08d6f5e462730e58f)](https://www.codacy.com/gh/microting/eform-workorder-base/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=microting/eform-workorder-base&amp;utm_campaign=Badge_Grade)
 
 ## NOTICE! this is not a standalone project and needs to be used with eForm Angular Frontend.
 
