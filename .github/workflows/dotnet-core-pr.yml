@@ -1,4 +1,4 @@
-name: .NET Core
+name: .NET Pull request
 
 on:
   pull_request:
