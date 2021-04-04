@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.2.31](https://github.com/microting/eform-workorder-base/tree/v1.2.31) (2021-04-04)
+
+[Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.30...v1.2.31)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.109 to 2.0.110 [\#64](https://github.com/microting/eform-workorder-base/issues/64)
+- Bump Microting.eForm from 4.4.16 to 4.4.17 [\#63](https://github.com/microting/eform-workorder-base/issues/63)
+
 ## [v1.2.30](https://github.com/microting/eform-workorder-base/tree/v1.2.30) (2021-04-02)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.29...v1.2.30)
@@ -40,10 +49,6 @@
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.25...v1.2.26)
 
-**Implemented enhancements:**
-
-- Bump Microting.eForm from 4.4.7 to 4.4.8 [\#51](https://github.com/microting/eform-workorder-base/issues/51)
-
 ## [v1.2.25](https://github.com/microting/eform-workorder-base/tree/v1.2.25) (2021-03-15)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.24...v1.2.25)
@@ -77,6 +82,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eForm from 4.4.7 to 4.4.8 [\#51](https://github.com/microting/eform-workorder-base/issues/51)
 - Bump Microting.eFormApi.BasePn from 2.0.98 to 2.0.99 [\#37](https://github.com/microting/eform-workorder-base/issues/37)
 - Bump Microting.eForm from 4.4.2 to 4.4.3 [\#36](https://github.com/microting/eform-workorder-base/issues/36)
 
@@ -493,11 +499,14 @@
 **Merged pull requests:**
 
 - Updates [\#3](https://github.com/microting/eform-workorder-base/pull/3) ([Gid733](https://github.com/Gid733))
-- Added base [\#2](https://github.com/microting/eform-workorder-base/pull/2) ([Gid733](https://github.com/Gid733))
 
 ## [v1.0.0](https://github.com/microting/eform-workorder-base/tree/v1.0.0) (2020-09-10)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/7930fd6137baa32cabe1a5c7d2209a715fce7418...v1.0.0)
+
+**Merged pull requests:**
+
+- Added base [\#2](https://github.com/microting/eform-workorder-base/pull/2) ([Gid733](https://github.com/Gid733))
 
 
 
