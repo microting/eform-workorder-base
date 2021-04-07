@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.2.34](https://github.com/microting/eform-workorder-base/tree/v1.2.34) (2021-04-07)
+
+[Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.33...v1.2.34)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.111 to 2.0.113 [\#74](https://github.com/microting/eform-workorder-base/issues/74)
+- Bump Microting.eForm from 4.4.20 to 4.4.21 [\#73](https://github.com/microting/eform-workorder-base/issues/73)
+
 ## [v1.2.33](https://github.com/microting/eform-workorder-base/tree/v1.2.33) (2021-04-06)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.32...v1.2.33)
@@ -52,6 +61,7 @@
 
 - Bump Microting.eFormApi.BasePn from 2.0.104 to 2.0.106 [\#55](https://github.com/microting/eform-workorder-base/issues/55)
 - Bump Microting.eForm from 4.4.9 to 4.4.11 [\#54](https://github.com/microting/eform-workorder-base/issues/54)
+- Bump Microting.eForm from 4.4.8 to 4.4.9 [\#52](https://github.com/microting/eform-workorder-base/issues/52)
 
 ## [v1.2.27](https://github.com/microting/eform-workorder-base/tree/v1.2.27) (2021-03-17)
 
@@ -60,7 +70,6 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 2.0.103 to 2.0.104 [\#53](https://github.com/microting/eform-workorder-base/issues/53)
-- Bump Microting.eForm from 4.4.8 to 4.4.9 [\#52](https://github.com/microting/eform-workorder-base/issues/52)
 
 ## [v1.2.26](https://github.com/microting/eform-workorder-base/tree/v1.2.26) (2021-03-16)
 
