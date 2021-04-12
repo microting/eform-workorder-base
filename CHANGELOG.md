@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.2.38](https://github.com/microting/eform-workorder-base/tree/v1.2.38) (2021-04-12)
+
+[Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.37...v1.2.38)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.117 to 2.0.118 [\#83](https://github.com/microting/eform-workorder-base/issues/83)
+- Bump Microting.eForm from 4.4.26 to 4.4.27 [\#82](https://github.com/microting/eform-workorder-base/issues/82)
+
 ## [v1.2.37](https://github.com/microting/eform-workorder-base/tree/v1.2.37) (2021-04-11)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.36...v1.2.37)
@@ -524,6 +533,10 @@
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.0.3...v1.0.4)
 
+**Merged pull requests:**
+
+- Added claims [\#6](https://github.com/microting/eform-workorder-base/pull/6) ([Gid733](https://github.com/Gid733))
+
 ## [v1.0.3](https://github.com/microting/eform-workorder-base/tree/v1.0.3) (2020-09-15)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.0.2...v1.0.3)
@@ -542,7 +555,6 @@
 
 **Merged pull requests:**
 
-- Added claims [\#6](https://github.com/microting/eform-workorder-base/pull/6) ([Gid733](https://github.com/Gid733))
 - Fixed context factory [\#4](https://github.com/microting/eform-workorder-base/pull/4) ([Gid733](https://github.com/Gid733))
 
 ## [v1.0.1](https://github.com/microting/eform-workorder-base/tree/v1.0.1) (2020-09-11)
