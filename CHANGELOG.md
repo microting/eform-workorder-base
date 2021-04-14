@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.2.40](https://github.com/microting/eform-workorder-base/tree/v1.2.40) (2021-04-14)
+
+[Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.39...v1.2.40)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.120 to 2.0.122 [\#87](https://github.com/microting/eform-workorder-base/issues/87)
+- Bump Microting.eForm from 4.4.29 to 4.4.31 [\#86](https://github.com/microting/eform-workorder-base/issues/86)
+
 ## [v1.2.39](https://github.com/microting/eform-workorder-base/tree/v1.2.39) (2021-04-13)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.38...v1.2.39)
@@ -159,6 +168,7 @@
 
 - Bump Microting.eFormApi.BasePn from 2.0.98 to 2.0.99 [\#37](https://github.com/microting/eform-workorder-base/issues/37)
 - Bump Microting.eForm from 4.4.2 to 4.4.3 [\#36](https://github.com/microting/eform-workorder-base/issues/36)
+- Bump Microting.eForm from 4.4.1 to 4.4.2 [\#34](https://github.com/microting/eform-workorder-base/issues/34)
 
 **Merged pull requests:**
 
@@ -171,7 +181,6 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 2.0.97 to 2.0.98 [\#35](https://github.com/microting/eform-workorder-base/issues/35)
-- Bump Microting.eForm from 4.4.1 to 4.4.2 [\#34](https://github.com/microting/eform-workorder-base/issues/34)
 
 ## [v1.2.20](https://github.com/microting/eform-workorder-base/tree/v1.2.20) (2021-02-20)
 
@@ -305,6 +314,7 @@
 **Merged pull requests:**
 
 - Bump Microsoft.NET.Test.Sdk from 16.7.1 to 16.8.3 [\#11](https://github.com/microting/eform-workorder-base/pull/11) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Updates [\#5](https://github.com/microting/eform-workorder-base/pull/5) ([Gid733](https://github.com/Gid733))
 
 ## [v1.0.61](https://github.com/microting/eform-workorder-base/tree/v1.0.61) (2021-01-06)
 
@@ -550,11 +560,6 @@
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.0.2...v1.0.3)
 
-**Merged pull requests:**
-
-- Updates [\#5](https://github.com/microting/eform-workorder-base/pull/5) ([Gid733](https://github.com/Gid733))
-- Added base [\#2](https://github.com/microting/eform-workorder-base/pull/2) ([Gid733](https://github.com/Gid733))
-
 ## [v1.0.2](https://github.com/microting/eform-workorder-base/tree/v1.0.2) (2020-09-15)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.0.1...v1.0.2)
@@ -578,6 +583,10 @@
 ## [v1.0.0](https://github.com/microting/eform-workorder-base/tree/v1.0.0) (2020-09-10)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/7930fd6137baa32cabe1a5c7d2209a715fce7418...v1.0.0)
+
+**Merged pull requests:**
+
+- Added base [\#2](https://github.com/microting/eform-workorder-base/pull/2) ([Gid733](https://github.com/Gid733))
 
 
 
