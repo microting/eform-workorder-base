@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.2.44](https://github.com/microting/eform-workorder-base/tree/v1.2.44) (2021-04-16)
+
+[Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.43...v1.2.44)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.126 to 2.0.127 [\#95](https://github.com/microting/eform-workorder-base/issues/95)
+- Bump Microting.eForm from 4.4.35 to 4.4.36 [\#94](https://github.com/microting/eform-workorder-base/issues/94)
+
 ## [v1.2.43](https://github.com/microting/eform-workorder-base/tree/v1.2.43) (2021-04-14)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.42...v1.2.43)
@@ -207,6 +216,7 @@
 
 - Bump Microting.eFormApi.BasePn from 2.0.97 to 2.0.98 [\#35](https://github.com/microting/eform-workorder-base/issues/35)
 - Bump Microting.eForm from 4.4.1 to 4.4.2 [\#34](https://github.com/microting/eform-workorder-base/issues/34)
+- Bump Microting.eFormApi.BasePn from 2.0.96 to 2.0.97 [\#32](https://github.com/microting/eform-workorder-base/issues/32)
 
 ## [v1.2.20](https://github.com/microting/eform-workorder-base/tree/v1.2.20) (2021-02-20)
 
@@ -214,7 +224,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eFormApi.BasePn from 2.0.96 to 2.0.97 [\#32](https://github.com/microting/eform-workorder-base/issues/32)
 - Bump Microting.eForm from 4.3.18 to 4.4.1 [\#31](https://github.com/microting/eform-workorder-base/issues/31)
 
 ## [v1.2.19](https://github.com/microting/eform-workorder-base/tree/v1.2.19) (2021-02-20)
@@ -300,10 +309,6 @@
 ## [v1.2.0](https://github.com/microting/eform-workorder-base/tree/v1.2.0) (2021-01-16)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.1.0...v1.2.0)
-
-**Merged pull requests:**
-
-- Bump NUnit from 3.12.0 to 3.13.0 [\#14](https://github.com/microting/eform-workorder-base/pull/14) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [v1.1.0](https://github.com/microting/eform-workorder-base/tree/v1.1.0) (2021-01-16)
 
@@ -571,6 +576,7 @@
 
 **Merged pull requests:**
 
+- Bump NUnit from 3.12.0 to 3.13.0 [\#14](https://github.com/microting/eform-workorder-base/pull/14) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Updates [\#7](https://github.com/microting/eform-workorder-base/pull/7) ([Gid733](https://github.com/Gid733))
 
 ## [v1.0.4](https://github.com/microting/eform-workorder-base/tree/v1.0.4) (2020-09-15)
