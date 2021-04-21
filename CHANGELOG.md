@@ -1,5 +1,23 @@
 # Changelog
 
+## [v1.2.47](https://github.com/microting/eform-workorder-base/tree/v1.2.47) (2021-04-21)
+
+[Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.46...v1.2.47)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.129 to 2.1.0 [\#101](https://github.com/microting/eform-workorder-base/issues/101)
+- Bump Microting.eForm from 4.4.38 to 4.5.0 [\#100](https://github.com/microting/eform-workorder-base/issues/100)
+
+## [v1.2.46](https://github.com/microting/eform-workorder-base/tree/v1.2.46) (2021-04-20)
+
+[Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.45...v1.2.46)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 2.0.128 to 2.0.129 [\#99](https://github.com/microting/eform-workorder-base/issues/99)
+- Bump Microting.eForm from 4.4.37 to 4.4.38 [\#98](https://github.com/microting/eform-workorder-base/issues/98)
+
 ## [v1.2.45](https://github.com/microting/eform-workorder-base/tree/v1.2.45) (2021-04-19)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.2.44...v1.2.45)
@@ -355,6 +373,10 @@
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.0.61...v1.0.62)
 
+**Merged pull requests:**
+
+- Bump Microsoft.NET.Test.Sdk from 16.7.1 to 16.8.3 [\#11](https://github.com/microting/eform-workorder-base/pull/11) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
 ## [v1.0.61](https://github.com/microting/eform-workorder-base/tree/v1.0.61) (2021-01-06)
 
 [Full Changelog](https://github.com/microting/eform-workorder-base/compare/v1.0.60...v1.0.61)
@@ -613,7 +635,6 @@
 
 **Merged pull requests:**
 
-- Bump Microsoft.NET.Test.Sdk from 16.7.1 to 16.8.3 [\#11](https://github.com/microting/eform-workorder-base/pull/11) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Fixed context factory [\#4](https://github.com/microting/eform-workorder-base/pull/4) ([Gid733](https://github.com/Gid733))
 
 ## [v1.0.1](https://github.com/microting/eform-workorder-base/tree/v1.0.1) (2020-09-11)
